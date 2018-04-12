@@ -1,0 +1,18 @@
+@model OdeToFood.ViewModels.HomeIndexViewModel
+
+<html>
+    <head>
+        <title>Food Review</title>
+    </head>
+    <body>
+        <h1>@Model.CurrentMessage</h1>
+        @foreach (var restaurant in Model.Restaurants)
+        {
+            <tr>
+                <td>@restaurant.Id</td>
+                <td>@restaurant.Name</td>
+            </tr>
+            
+        }
+    </body>
+</html>
